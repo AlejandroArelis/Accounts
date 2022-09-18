@@ -1,6 +1,4 @@
 ﻿using AutoMapper;
-using Gastos.DTOs.Accounts;
-using Gastos.DTOs.Users;
 using Gastos.Entities;
 
 namespace Gastos.Utilities
@@ -10,10 +8,11 @@ namespace Gastos.Utilities
         public AutoMapperProfiles()
         {
             // Users
-            CreateMap<GetByIdDTO, User>();
+            CreateMap<DTOs.Users.GetByIdDTO, User>();
+            CreateMap<DTOs.Users.InsertDTO, User>();
 
             // Accounts
-            CreateMap<InsertDTO, Account>();
+            CreateMap<DTOs.Accounts.InsertDTO, Account>();
         }
     }
 }

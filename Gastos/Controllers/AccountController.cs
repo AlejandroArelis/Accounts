@@ -3,8 +3,6 @@ using Gastos.DTOs.Accounts;
 using Gastos.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Principal;
-using System.Xml.Linq;
 
 namespace Gastos.Controllers
 {
